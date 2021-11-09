@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.root {
+    
+}
+
 body{
     background-color: rgb(142, 142, 151);
 }
@@ -11,45 +16,111 @@ header {
     background-color: white;
     padding: 10px;
     margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
 }
 
 header h1 {
+    border: 3px solid lime;
     font-weight: bold;
-    font-size: 36px;
-    color: oldlace;
+    font-size: 40px;
+    color: black;
     margin: 0;
-    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 header a {
     text-decoration: none;
 }
 
+header nav ul {
+    color: red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    justify-content: center;
+}
+
 header nav ul li {
-    display: inline;
+    display: inline;padding: 10px;
 }
 
 header nav {
     float: right;
     margin: 7px 0;
+    border: 3px solid black;
 }
 header nav ul li a {
+    color: black;
     margin: 0 30px;
+    text-decoration: none;
     font-weight: lighter;
     font-size: 22px;
 }
 
-body {
-    color: brown;
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 3px solid red;
+    margin: 10px;
+    align-items: baseline;
+    
 }
 
-.aboutme{
+.aboutme {
+    border: 3px solid blue;
+    display: flex;
+    align-items: center;
+}
+
+.pic {
+    display: flex;
+    flex-wrap: wrap;
     border: 3px solid lime;
-    background-color: white;
-    color: pink;
-    margin: 10px;
-    padding: 10px;
-    width: auto;
+}
+
+#about-me {
+    margin-bottom: 2%;
+    bottom: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    border: 3px solid white;
+    position: relative;
+    height: 100%;
+    padding: 3%;
+}
+
+#about-me h2 {
+    margin: 0% auto;
+    position: relative;
+    bottom: 8%;
     text-align: center;
+    padding: 0% 0% 0% 0%;
+    border: 3px solid blue;
+}
+
+.abouttext {
+    margin: 10% 1% 0% 0%;
+    line-height: 173%;
+    border: 3px solid lime;
+    bottom: 0%;
+    height: 75%;
+    padding: 2%;
+}
+
+.textbox{
+    margin: auto;
+    border:3px solid red;
+}
+.textbox p {
+    font-size: 20px;
 }
 
 .mainbody {
@@ -64,9 +135,11 @@ body {
 .bigbox {
     text-align: center;
     border: 3px solid lime;
-    background-color: white;
     height: 500px;
     margin: 10px;
+    background-image: url("../Imgs/software-developer.jpg");
+    background-size: 84%;
+    
 }
 
 .bigbox a {
@@ -74,16 +147,21 @@ body {
     top: 50%;
     text-align: center;
     font-size: 50px;
+    color: white;
+    top: 42%;
+    font-weight: bolder;
 }
 
 .smallbox {
+    background-image: url("../Imgs/cloud-background.jpeg");
+    background-position: center;
+    background-size: 50%;
     padding: 10px;
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
     height: 500px;
-    background: white;
     justify-content: center;
 }
 
@@ -93,6 +171,17 @@ body {
     clear: both;
 
 }
+
+.boxes a {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    position: relative;
+    top: 6px;
+    text-align: center;
+    font-size: 30px;
+}
+
 .box1 {
     border: 3px solid black;;
     height: 100px;
@@ -102,27 +191,41 @@ body {
     text-align: center;
 
 }
-.box2 {
-    border: 3px solid black;
-    box-sizing: content-box;
-    height: 100px;
-    width: 250px;
 
+#resume {
+    background-image:url("../Imgs/Resume\ pic.jpg");
+    background-position: center;
+    background-size: 106%;
+   
 }
-.box3 {
-    position: absolute;
-    border: 3px solid black;
-    box-sizing: content-box;
 
+#run 
+{
+    background-image: url("../Imgs/run\ buddy.jpg");
+    background-position: center;
 }
-.box4 {
-    position: absolute;
-    border: 3px solid black;
-    box-sizing: content-box;
 
+#run a {
+    opacity: 0;
 }
+
+#robot {
+    background-image: url("../Imgs/Under-Construction-Sign.jpg");
+    background-position: center;
+    background-size: 120%;
+}
+
+#robot a {
+    opacity: 0;
+}
+
+
+
+
 
 footer {
+    display: flex;
+    flex-direction: column;
     margin: 10px;
     padding: 10px;
     border: 3px solid lime;
@@ -130,8 +233,73 @@ footer {
 }
 
 footer h2 {
+    flex-wrap: wrap;
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
 }
 
+.contact {
+    margin: 2%;
+    padding: 2%;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 3px solid red;
+}
+.contact a {
+    
+    padding-left: 430px;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header  h1 {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    header nav ul li {
+        font-size: 20px;
+    }
+
+    .about {
+        align-items: center;
+    }
+
+    .aboutme{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pic {
+        flex: 0 70%%;
+    }
+    
+    .contact a {
+        padding: 0;
+    
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header nav ul li {
+        text-align: center;
+    }
+
+    header nav ul li a {
+        font-size: 100%;
+        margin: 0% 5%;
+    }
+
+
+    
+}
+    
 
