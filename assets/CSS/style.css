@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-.root {
-    
-}
 
 body{
     background-color: rgb(142, 142, 151);
@@ -71,7 +68,7 @@ header nav ul li a {
     border: 3px solid red;
     margin: 10px;
     align-items: baseline;
-    min-width: 488px
+    min-width: 55px
     
 }
 
@@ -131,7 +128,7 @@ header nav ul li a {
 }
 
 .mainbody {
-    min-width: 488px;
+    min-width: 55px;
     background-color:black;
     height: auto;
     margin: 10px;
@@ -234,7 +231,7 @@ header nav ul li a {
 
 
 footer {
-    min-width: 488px;
+    min-width: 55px;
     display: flex;
     flex-direction: column;
     margin: 10px;
@@ -268,7 +265,7 @@ footer h2 {
         
          padding-bottom: 0;
          position: relative;
-         min-width: 488px;
+         min-width: 55px;
          
     }
     header  h1 {
@@ -294,7 +291,7 @@ footer h2 {
     }
 
     .pic {
-        min-width: 488px;
+        min-width: 55px;
     }
     
     .contact a {
@@ -318,8 +315,12 @@ footer h2 {
         margin: 0% 5%;
     }
 
+    .pic {
+        width: 1%;
+    }
 
-    
+
+     s
 }
     
 
