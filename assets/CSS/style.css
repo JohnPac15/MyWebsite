@@ -19,6 +19,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: column;
     top: 0;
 }
 
@@ -70,6 +71,7 @@ header nav ul li a {
     border: 3px solid red;
     margin: 10px;
     align-items: baseline;
+    min-width: 488px
     
 }
 
@@ -78,8 +80,13 @@ header nav ul li a {
     display: flex;
     align-items: center;
 }
+.picflex {
+    border: 3px solid 3px;
+    display: flex;
+}
 
 .pic {
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
     border: 3px solid lime;
@@ -124,6 +131,7 @@ header nav ul li a {
 }
 
 .mainbody {
+    min-width: 488px;
     background-color:black;
     height: auto;
     margin: 10px;
@@ -183,6 +191,8 @@ header nav ul li a {
 }
 
 .box1 {
+    display: flex;
+    flex-wrap: wrap;
     border: 3px solid black;;
     height: 100px;
     width: 250px;
@@ -224,6 +234,7 @@ header nav ul li a {
 
 
 footer {
+    min-width: 488px;
     display: flex;
     flex-direction: column;
     margin: 10px;
@@ -254,9 +265,11 @@ footer h2 {
 
 @media screen and (max-width: 980px) {
     header {
-        padding-bottom: 0;
-        justify-content: center;
-        position: relative;
+        
+         padding-bottom: 0;
+         position: relative;
+         min-width: 488px;
+         
     }
     header  h1 {
         width: 100%;
@@ -276,14 +289,21 @@ footer h2 {
         flex-wrap: wrap;
         justify-content: center;
     }
+    #about--me {
+
+    }
 
     .pic {
-        flex: 0 70%%;
+        min-width: 488px;
     }
     
     .contact a {
         padding: 0;
     
+    }
+
+    .bigbox {
+        
     }
 }
 
