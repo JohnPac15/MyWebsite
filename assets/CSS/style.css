@@ -48,7 +48,6 @@ header nav ul li {
 }
 
 header nav {
-    float: right;
     margin: 7px 0;
     border: 3px solid black;
 }
@@ -171,12 +170,17 @@ header nav ul li a {
 }
 
 .boxes {
+    height: 100%;
     border: 3px solid red;
-    content: "";
-    display: table;
-    clear: both;
-
+    width: 56%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
 }
+
+
 
 .boxes a {
     color: black;
@@ -189,13 +193,13 @@ header nav ul li a {
 }
 
 .box1 {
+    height: 18%;
+    width: 56%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: column;
     border: 3px solid black;;
-    height: 100px;
-    width: 250px;
     padding: 20px;
-    margin:10px;
     text-align: center;
 
 }
@@ -211,6 +215,7 @@ header nav ul li a {
 {
     background-image: url("../Imgs/run\ buddy.jpg");
     background-position: center;
+    background-size: 120%;
 }
 
 #run a {
@@ -220,7 +225,7 @@ header nav ul li a {
 #robot {
     background-image: url("../Imgs/Under-Construction-Sign.jpg");
     background-position: center;
-    background-size: 120%;
+    background-size: 33%;
 }
 
 #robot a {
@@ -294,6 +299,26 @@ footer h2 {
     .pic {
         min-width: 55px;
     }
+
+    .boxes {
+
+    }
+
+    .box1 {
+        width: 58%;
+    }
+
+    #resume {
+        background-size: 100%;
+    }
+
+    #run {
+        background-size: 100%;
+    }
+
+    #robot {
+        background-size: 34%;
+    }
     
     .contact a {
         padding: 0;
@@ -302,6 +327,13 @@ footer h2 {
 
     .bigbox {
         
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
     }
 }
 
@@ -328,6 +360,18 @@ footer h2 {
        width: 100%;
        height: auto; 
     }
+
+    .boxes {
+        width: fit-content;
+    }
+
+    .box1 {
+        width: auto;
+    }
+
+    #robot {
+        background-size: 121%;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -336,11 +380,25 @@ footer h2 {
     }
 
     .boxes {
-
-       min-width: 1px;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        min-width: 1px;
 
     }
     .box1 {
+        width: inherit;
+        height: 18%;
         min-width: 1px;
+        font-size: x-large;
+
+    }
+    #run {
+        background-size: 118%;
+    }
+
+    .contact {
+        font-size: 119%;
     }
 }
