@@ -171,6 +171,7 @@ header nav ul li a {
 }
 
 .boxes {
+    border: 3px solid red;
     content: "";
     display: table;
     clear: both;
@@ -319,8 +320,27 @@ footer h2 {
         width: 1%;
     }
 
+    .bigbox {
+        
+    }
 
-     s
+    .bigbox a{
+       width: 100%;
+       height: auto; 
+    }
 }
-    
 
+@media screen and (max-width: 500px) {
+    .bigbox a{
+        font-size: 33px;
+    }
+
+    .boxes {
+
+       min-width: 1px;
+
+    }
+    .box1 {
+        min-width: 1px;
+    }
+}
