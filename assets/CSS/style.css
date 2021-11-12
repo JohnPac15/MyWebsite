@@ -194,7 +194,7 @@ header nav ul li a {
 
 .box1 {
     height: 18%;
-    width: 56%;
+    width: 50%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -225,12 +225,24 @@ header nav ul li a {
 #robot {
     background-image: url("../Imgs/Under-Construction-Sign.jpg");
     background-position: center;
-    background-size: 33%;
+    background-size: 94%;
 }
 
 #robot a {
     opacity: 0;
 }
+
+#Horiseon {
+    background-color: #2a607c;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#Horiseon a {
+    color: #d9dcd6;
+    font-size: 40px ;
+}
+    
 
 
 
@@ -400,5 +412,25 @@ footer h2 {
 
     .contact {
         font-size: 119%;
+    }
+
+    #Horiseon a {
+        font-size: 31px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .boxes{
+        width: 100%;
+
+    }
+
+    .box1 {
+        width: 90%;
+    }
+
+    #Horiseon a {
+        font-size: 36px;
     }
 }
