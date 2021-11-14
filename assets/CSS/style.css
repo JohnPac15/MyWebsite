@@ -9,8 +9,9 @@ body{
     background-color: rgb(142, 142, 151);
 }
 header {
-    border: 3px solid lime;
-    background-color: white;
+    border-radius: 3px;
+    border: 3px solid white;
+    background-color: black;
     padding: 10px;
     margin: 10px;
     display: flex;
@@ -21,7 +22,6 @@ header {
 }
 
 header h1 {
-    border: 3px solid lime;
     font-weight: bold;
     font-size: 40px;
     color: black;
@@ -31,11 +31,11 @@ header h1 {
     justify-content: center;
 }
 header a {
+    color: #8e8e97;
     text-decoration: none;
 }
 
 header nav ul {
-    color: red;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -48,11 +48,12 @@ header nav ul li {
 }
 
 header nav {
+    color: white;
     margin: 7px 0;
-    border: 3px solid black;
+    border: 3px solid#8e8e97;
 }
 header nav ul li a {
-    color: black;
+    color:white;
     margin: 0 30px;
     text-decoration: none;
     font-weight: lighter;
@@ -64,15 +65,16 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 3px solid red;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
     margin: 10px;
     align-items: baseline;
-    min-width: 55px
+    min-width: 55px;
+    border-radius: 5%;
     
 }
 
 .aboutme {
-    border: 3px solid blue;
     display: flex;
     align-items: center;
 }
@@ -82,10 +84,11 @@ header nav ul li a {
 }
 
 .pic {
+    border-radius: 10%;
     flex: 1;
     display: flex;
     flex-wrap: wrap;
-    border: 3px solid lime;
+    border: 3px solid #020202;
 }
 
 #about-me {
@@ -94,7 +97,6 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    border: 3px solid white;
     position: relative;
     height: 100%;
     padding: 3%;
@@ -106,13 +108,12 @@ header nav ul li a {
     bottom: 8%;
     text-align: center;
     padding: 0% 0% 0% 0%;
-    border: 3px solid blue;
+    
 }
 
 .abouttext {
     margin: 10% 1% 0% 0%;
     line-height: 173%;
-    border: 3px solid lime;
     bottom: 0%;
     height: 75%;
     padding: 2%;
@@ -120,7 +121,7 @@ header nav ul li a {
 
 .textbox{
     margin: auto;
-    border:3px solid red;
+    
 }
 .textbox p {
     font-size: 20px;
@@ -128,7 +129,8 @@ header nav ul li a {
 
 .mainbody {
     min-width: 55px;
-    background-color:black;
+    background-color:#000000;
+    border-radius: 2%;
     height: auto;
     margin: 10px;
     width: auto;
@@ -138,7 +140,7 @@ header nav ul li a {
 
 .bigbox {
     text-align: center;
-    border: 3px solid lime;
+    border: 3px solid white;
     height: 500px;
     margin: 10px;
     background-image: url("../Imgs/software-developer.jpg");
@@ -157,6 +159,7 @@ header nav ul li a {
 }
 
 .smallbox {
+    border: 3px solid white;
     background-image: url("../Imgs/cloud-background.jpeg");
     background-position: center;
     background-size: 50%;
@@ -171,7 +174,6 @@ header nav ul li a {
 
 .boxes {
     height: 100%;
-    border: 3px solid red;
     width: 56%;
     display: flex;
     flex-direction: column;
@@ -193,6 +195,7 @@ header nav ul li a {
 }
 
 .box1 {
+    border-radius: 25%;
     height: 18%;
     width: 50%;
     display: flex;
@@ -203,6 +206,8 @@ header nav ul li a {
     text-align: center;
 
 }
+
+
 
 #resume {
     background-image:url("../Imgs/Resume\ pic.jpg");
@@ -249,32 +254,36 @@ header nav ul li a {
 
 
 footer {
+    border-radius: 5%;
     min-width: 55px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin: 10px;
     padding: 10px;
-    border: 3px solid lime;
-    background: white;
+    border: 3px solid black;
+    background: black;
 }
 
 footer h2 {
+    color: #8e8e97;
     flex-wrap: wrap;
     text-align: center;
     font-size: 24px;
 }
 
 .contact {
+    color: #8e8e97;
     margin: 2%;
     padding: 2%;
     font-size: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border: 3px solid red;
 }
+
 .contact a {
-    
+    color: #8e8e97;
     padding-left: 430px;
 }
 
@@ -345,7 +354,7 @@ footer h2 {
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
     }
 }
 
