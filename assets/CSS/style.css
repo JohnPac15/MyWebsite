@@ -227,13 +227,13 @@ header nav ul li a {
     opacity: 0;
 }
 
-#robot {
-    background-image: url("../Imgs/Under-Construction-Sign.jpg");
+#project2 {
+    background-image: url("../Imgs/My\ Night\ Sky.png");
     background-position: center;
     background-size: 94%;
 }
 
-#robot a {
+#project2 a {
     opacity: 0;
 }
 
