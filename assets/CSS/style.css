@@ -238,14 +238,12 @@ header nav ul li a {
 }
 
 #Horiseon {
-    background-color: #2a607c;
-    
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("../Imgs/PIA-large.jpg");
+    background-size: cover;
 }
 
 #Horiseon a {
-    color: #d9dcd6;
-    font-size: 40px ;
+    opacity: 0;
 }
     
 
